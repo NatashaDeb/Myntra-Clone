@@ -96,3 +96,33 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
+/* CSS section for Main */
+
+.banner-container{
+margin: 40px 0;
+}
+
+.banner-image{
+    width: 100%;
+}
+
+.category-heading{
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: .15em;
+    font-size: 1.8em;
+    margin: 50px 10px 10px 30px;
+    max-height: 5em;
+    font-weight: 900;
+}
+
+.category-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sale-items{
+width: 250 px;
+}
