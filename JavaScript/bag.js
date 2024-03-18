@@ -19,7 +19,9 @@ function displayBagSummary(){
     })
 
     finalPrice = totalMRP-totalDiscount+CONVINIENCE_FEES;
-
+      if(!bagSummaryElement){
+        return;
+      }
     bagSummaryElement.innerHTML = `
 
     <div class="bag-details-container">
