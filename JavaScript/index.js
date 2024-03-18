@@ -32,6 +32,8 @@ function displayBagCount(){
 
 function displayMenSectionItems(){
     let menItemContainerElement = document.querySelector('#men-section-container');
+    //when we included index.html in man.html that code also starts generating and its not even that page
+    //therefore this page only should be loaded if its html is truthy if not return to index.html by default from there come back
     if(!menItemContainerElement){//return if you have not got any menItemContainerElement i,e falsy value
         return;
     }
@@ -62,6 +64,8 @@ menItemContainerElement.innerHTML = menInnerHTML;
 
 function displaywomenSectionItems(){
     let womenItemContainerElement = document.querySelector('#women-section-container');
+    //when we included index.html in woman.html that code also starts generating and its not even that page
+    //therefore this page only should be loaded if its html is truthy if not return to index.html by default from there come back
     if(!womenItemContainerElement){//return if you have not got any womenItemContainerElement i,e falsy value
         return;
     }
@@ -82,7 +86,7 @@ womenItems.forEach(item =>{
     <span class="current-price">Rs ${item["current-price"]}</span>
     <span class="original-price">Rs ${item["original-price"]}</span>
     <span class="discount">(${item.discount}% OFF)</span> <br>
-    <button class="button-addToBag"  onclick="addToBag('${item.id}');">Add to Bag</button>
+    <button class="button-addToBag" onclick="addToBag(${item.id});">Add to Bag</button>
 </div>
 </div>
 `;
