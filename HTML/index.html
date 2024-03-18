@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+
    <header>
-    <div class="logo-container">
-        <a href="#"> <img id="logo" src="/images/logo.jpeg" alt="Myntra-Logo"></a>
-    </div>
+    <a class="logo-container" href="/HTML/index.html">
+            <img id="logo" src="/images/logo.jpeg" alt="Myntra-Logo">
+    </a>
+    
     <nav class="nav-bar">
-        <a href="#">Men</a>
-        <a href="#">Women</a>
+        <a href="/HTML/menSection.html">Men</a>
+        <a href="/HTML/womenSection.html">Women</a>
         <a href="#">Kids</a>
         <a href="#">Home & Living</a>
         <a href="#">Beauty</a>
@@ -35,12 +37,13 @@
                 </span>
             <span class="action-name">Wishlist</span>
         </div>
-        <div class="action-container">
+        <a href="#" class="action-container">
             <span class="material-symbols-outlined action-icon">
                 shopping_bag
                 </span>
             <span class="action-name">Bag</span>
-        </div>
+            <span class="bag-count">0</span>
+        </a>
     </div>
    </header> 
 
@@ -153,5 +156,9 @@
         © 2024 www.myntra.com. All rights reserved.
     </div>
    </footer>
+   <script src="/JavaScript/data.js"></script>
+   <script src="/JavaScript/index.js"></script>
+   <script src="/JavaScript/man.js"></script>
+   <script src="/JavaScript/woman.js"></script>
 </body>
 </html>
